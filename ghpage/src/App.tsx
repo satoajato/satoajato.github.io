@@ -1,4 +1,5 @@
 import "./App.css";
+import imageToAdd from "./assets/images/minhafoto.jpg";
 
 import {
   ObjectPage,
@@ -42,22 +43,24 @@ function App() {
         <ObjectPageHeader>
           <FlexBox alignItems="Center" wrap="Wrap">
             <FlexBox direction="Column">
-              <Link>+33 6 4512 5158</Link>
-              <Link href="mailto:ui5-webcomponents-react@sap.com">
-                DeniseSmith@sap.com
+              <Link href="https://www.linkedin.com/in/lucas-yo-sato/">
+                LinkedIn
               </Link>
-              <Link href="https://github.com/SAP/ui5-webcomponents-react">
-                https://github.com/SAP/ui5-webcomponents-react
+              <Link href="mailto:syoheidev@gmail.com">
+                syoheidev@gmail.com
+              </Link>
+              <Link href="https://github.com/satoajato">
+                https://github.com/satoajato
               </Link>
             </FlexBox>
             <FlexBox direction="Column" style={{ padding: "10px" }}>
-              <Label>San Jose</Label>
-              <Label>California, USA</Label>
+              <Label>Arapongas</Label>
+              <Label>PR, Brazil</Label>
             </FlexBox>
           </FlexBox>
         </ObjectPageHeader>
       }
-      image="https://sap.github.io/ui5-webcomponents-react/v2/assets/Person-B7wHqdJw.png"
+      image={imageToAdd}
       imageShapeCircle
       mode="Default"
       onBeforeNavigate={function ks() { }}
@@ -85,7 +88,7 @@ function App() {
               Information (only visible if header content is expanded)
             </MessageStrip>
           }
-          header="Denise Smith"
+          header="Lucas Y. O. Sato"
           navigationBar={
             <Toolbar design="Transparent">
               <ToolbarButton design="Transparent" icon="full-screen" />
@@ -98,9 +101,9 @@ function App() {
               Information (only visible if header content is collapsed/snapped)
             </MessageStrip>
           }
-          subHeader="Senior UI Developer"
+          subHeader="Consultor SAP"
         >
-          <ObjectStatus state="Positive">employed</ObjectStatus>
+          <ObjectStatus state="Positive"></ObjectStatus>
         </ObjectPageTitle>
       }
     >
